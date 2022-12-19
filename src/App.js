@@ -19,33 +19,24 @@ import { infoAPI, searchAPI } from "./adapters/clientAPI";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />} errorElement={<Error />}>
-      <Route 
-        index 
-        element={<Home />} 
-      />
-      <Route
-        path="/recipes"
-        element={<Recipes />}
-        loader={recipesLoader}
-      />
+      <Route index element={<Home />} />
+      <Route path="/recipes" element={<Recipes />} loader={recipesLoader} />
       <Route
         path="/recipes/:id"
         element={<SingleRecipe />}
-        loader={({ params }) => {return infoAPI(params.id)}}
+        loader={({ params }) => {
+          return infoAPI(params.id);
+        }}
       />
       <Route
         path="/recipes/search/:query"
         element={<SearchedRecipes />}
-        loader={({ params }) => {return searchAPI(params.query)}}
+        loader={({ params }) => {
+          return searchAPI(params.query);
+        }}
       />
-      <Route
-        path="/favorites"
-        element={<Favorites />}
-      />
-      <Route 
-        path="/contacts" 
-        element={<Contacts />} 
-      />
+      <Route path="/favorites" element={<Favorites />} />
+      <Route path="/contacts" element={<Contacts />} />
     </Route>
   )
 );

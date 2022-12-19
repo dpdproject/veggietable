@@ -12,7 +12,7 @@
   height: 10px;
   border-radius: 50%;
   -webkit-animation: loading 1.8s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
-          animation: loading 1.8s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
+  animation: loading 1.8s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
   transform-origin: bottom center;
   position: relative;
 }
@@ -48,40 +48,40 @@
 }
 .circle-1 {
   -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .circle-2 {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .circle-3 {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .circle-4 {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .circle-5 {
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .circle-6 {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .circle-7 {
   -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 .circle-8 {
   -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}/*# sourceMappingURL=loading.css.map */
+  animation-delay: 0.8s;
+} /*# sourceMappingURL=loading.css.map */

@@ -19,10 +19,7 @@ const SimilarCard = (props) => {
       <div className="recipeCard--image">
         <img src={props.image || defaultImage} alt={props.title} />
         <div className="recipeCard--image--fav">
-          <Button
-            handleClick={() => myFav(props)}
-            icon={"fi fi-sr-heart"}
-          />
+          <Button handleClick={() => myFav(props)} icon={"fi fi-sr-heart"} />
         </div>
       </div>
       <div className="recipeCard--info">

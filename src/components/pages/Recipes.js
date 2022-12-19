@@ -5,7 +5,7 @@ import "./css/recipes.css";
 import { fetchAPI } from "../../adapters/clientAPI";
 import Loading from "../UI/molecules/Loading";
 import RecipesLayout from "../UI/layout/RecipesLayout";
-import Error from './Error'
+import Error from "./Error";
 import AnimatedPage from "../AnimatedPage";
 
 export function loader() {
@@ -23,11 +23,8 @@ function Recipes() {
   return (
     <AnimatedPage>
       <Suspense fallback={<Loading />}>
-        <Await 
-          resolve={data} 
-          errorElement={<Error />}
-        >
-          <RecipesLayout handleRefresh={refreshPage}/>
+        <Await resolve={data} errorElement={<Error />}>
+          <RecipesLayout handleRefresh={refreshPage} />
         </Await>
       </Suspense>
     </AnimatedPage>

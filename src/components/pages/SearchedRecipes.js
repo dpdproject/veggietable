@@ -14,11 +14,8 @@ const SearchedRecipes = () => {
   return (
     <AnimatedPage>
       <Suspense fallback={<Loading />}>
-        <Await
-          resolve={searchData}
-          errorElement={<Error />}
-        >
-          <SearchedRecipesLayout query={query} data={searchData.data}/>
+        <Await resolve={searchData} errorElement={<Error />}>
+          <SearchedRecipesLayout query={query} data={searchData.data} />
         </Await>
       </Suspense>
     </AnimatedPage>

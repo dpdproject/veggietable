@@ -5,7 +5,7 @@ import "./css/singleRecipe.css";
 import AnimatedPage from "../AnimatedPage";
 import SingleRecipeLayout from "../UI/layout/SingleRecipeLayout";
 import Loading from "../UI/molecules/Loading";
-import Error from './Error'
+import Error from "./Error";
 
 const SingleRecipe = () => {
   const infoData = useLoaderData();
@@ -13,11 +13,8 @@ const SingleRecipe = () => {
   return (
     <AnimatedPage>
       <Suspense fallback={<Loading />}>
-        <Await 
-          resolve={infoData} 
-          errorElement={<Error />}
-        >
-          <SingleRecipeLayout infoData={infoData}/>
+        <Await resolve={infoData} errorElement={<Error />}>
+          <SingleRecipeLayout infoData={infoData} />
         </Await>
       </Suspense>
     </AnimatedPage>

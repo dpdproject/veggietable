@@ -37,7 +37,11 @@ const SingleRecipeLayout = (infoData) => {
             <div className="recipeSection--icons">
               <Button
                 handleClick={() => myFav(data)}
-                icon={fav.find((item) => item.id === data.id) ? "fi fi-sr-heart" : null}
+                icon={
+                  fav.find((item) => item.id === data.id)
+                    ? "fi fi-sr-heart"
+                    : null
+                }
                 text={"Add To Favorite"}
               />
             </div>

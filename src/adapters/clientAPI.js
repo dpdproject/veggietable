@@ -25,11 +25,11 @@ export const searchAPI = async (query) => {
     );
 
     const tempData = searchData.data.results;
-    const id = tempData.map((item) => (item.id.toString()))
+    const id = tempData.map((item) => item.id.toString());
 
     const data = await axios.get(
       `https://api.spoonacular.com/recipes/informationBulk?apiKey=${process.env.REACT_APP_API_KEY}&ids=${id}`
-    )
+    );
 
     return data;
   } catch (e) {
@@ -59,23 +59,22 @@ export const infoAPI = async (id) => {
     const tempSimilarRecipes = similarData.data;
 
     // FETCH INFO FOR SIMILAR RECIPES
-    const tempSimilarId = tempSimilarRecipes.map((item) => `${item.id}`)
+    const tempSimilarId = tempSimilarRecipes.map((item) => `${item.id}`);
     const similarId = await axios.get(
       `https://api.spoonacular.com/recipes/informationBulk?apiKey=${process.env.REACT_APP_API_KEY}&ids=${tempSimilarId}`
-      );
-      
-    const tempImageSimilar = similarId.data.map((item) => item.image)
+    );
+
+    const tempImageSimilar = similarId.data.map((item) => item.image);
     const similarRecipes = similarId.data.map((item) => {
+      const imageSimilar = tempImageSimilar.map((item) => item);
 
-      const imageSimilar = tempImageSimilar.map((item) => item)
-
-      return ({...item, imageSimilar})
-    })
+      return { ...item, imageSimilar };
+    });
 
     // FIX PRICE INFORMATIONS
     const price = (data.pricePerServing / 100).toFixed(2);
 
-    return {data, similarRecipes, price};
+    return { data, similarRecipes, price };
   } catch (e) {
     if (e.response) {
       console.log(e.response.data);
