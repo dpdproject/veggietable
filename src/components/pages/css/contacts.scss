@@ -1,0 +1,116 @@
+@use "../../../css/base.scss";
+
+.contacts {
+  position: relative;
+  top: 8rem;
+
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  &--title {
+    max-width: 20rem;
+
+    h1 {
+      font-size: base.$h1--size;
+      margin-bottom: 1rem;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      margin-top: 2rem;
+      text-align: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    width: 20rem;
+
+    input {
+      margin-top: -2rem;
+      height: 2rem;
+      text-indent: 0.5rem;
+    }
+
+    .textarea {
+      margin-top: -2rem;
+    }
+
+    button {
+      height: 2rem;
+      background-color: transparent;
+
+      border: 0.5px solid base.$tertiary-color;
+      border-radius: 10rem;
+
+      box-shadow: base.$shadow-light;
+      transition: base.$shadow-transition;
+
+      cursor: pointer;
+    }
+
+    button:hover {
+      box-shadow: base.$shadow-dark;
+    }
+
+    button:active {
+      box-shadow: base.$shadow-light-second;
+    }
+  }
+}
+
+.textarea {
+  max-width: 20rem;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .contacts {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15rem;
+
+    height: 80vh;
+
+    padding-top: 4rem;
+
+    &--title {
+      max-width: 25rem;
+
+      div {
+        text-align: left;
+      }
+    }
+
+    form {
+      width: 25rem;
+    }
+  }
+
+  .textarea {
+    max-width: 25rem;
+  }
+}
+
+label {
+  text-transform: capitalize;
+}

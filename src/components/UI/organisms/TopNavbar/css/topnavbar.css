@@ -1,0 +1,61 @@
+.top--navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 6rem;
+  position: absolute;
+  z-index: 1;
+}
+.top--navbar--logo {
+  display: flex;
+  gap: 0.5rem;
+}
+.top--navbar--logo h1 {
+  font-size: 2rem;
+}
+.top--navbar--logo img {
+  width: 2.5rem;
+}
+.top--navbar--links {
+  display: flex;
+  gap: 10rem;
+}
+.top--navbar--links .text-red {
+  color: red;
+  font-weight: bold;
+  font-family: "Caveat";
+  position: relative;
+  top: -0.5rem;
+  left: -0.3rem;
+}
+.top--navbar--links a {
+  display: flex;
+  align-items: center;
+  font-family: "Caveat";
+}
+.top--navbar--links a i {
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+.top--navbar--links a .fi-sr-heart {
+  color: red;
+}
+@media screen and (max-width: 1200px) {
+  .top--navbar {
+    justify-content: center;
+  }
+  .top--navbar--links {
+    display: none;
+  }
+}
+
+.veggie {
+  color: rgb(138, 181, 33);
+  font-family: "Caveat";
+}
+
+.table {
+  color: rgb(181, 164, 33);
+  font-family: "Caveat";
+}/*# sourceMappingURL=topnavbar.css.map */

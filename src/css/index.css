@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", "Caveat", cursive;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(52, 52, 52);
+}
+
+a:hover,
+a:focus {
+  color: rgb(207, 128, 33);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,11 @@
+@use "../../../css/base.scss";
+
+.error {
+  width: 30rem;
+  position: absolute;
+  top: 25rem;
+  left: 50%;
+  margin-left: -15rem;
+
+  text-align: center;
+}

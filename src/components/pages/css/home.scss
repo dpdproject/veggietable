@@ -1,0 +1,91 @@
+@use "../../../css/base";
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: url(/src/images/image1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &--info {
+    position: absolute;
+
+    margin-top: 7rem;
+    width: 60%;
+    text-align: center;
+
+    h1 {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-family: "Caveat";
+      }
+    }
+
+    p {
+      letter-spacing: 4px;
+      font-family: "Caveat";
+    }
+
+    .cook {
+      text-transform: uppercase;
+      font-size: 50px;
+      margin-bottom: -10px;
+      letter-spacing: 5px;
+    }
+    .with {
+      font-size: 25px;
+      padding-left: 100px;
+      margin-bottom: -15px;
+    }
+    .colors {
+      text-transform: uppercase;
+      font-size: 80px;
+      padding-right: 100px;
+      letter-spacing: 5px;
+    }
+  }
+
+  &--circle {
+    width: 150%;
+    height: 25rem;
+    border-radius: 0 0 100% 100%;
+    background-color: base.$gray-light;
+    box-shadow: base.$shadow-light;
+
+    z-index: 0;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home {
+    &--info {
+      position: absolute;
+      right: 8.5rem;
+      top: 3rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 25rem;
+    }
+
+    &--circle {
+      width: 50rem;
+      height: 40rem;
+      border-radius: 0 0 0 100%;
+      background-color: base.$green-light;
+
+      box-shadow: base.$shadow-light-second;
+
+      position: absolute;
+      right: 0;
+    }
+  }
+}

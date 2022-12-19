@@ -1,0 +1,30 @@
+.search {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.search input {
+  height: 3rem;
+  width: 20rem;
+  border: 0.5px solid rgb(207, 128, 33);
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px 0px rgb(221, 221, 221);
+  transition: box-shadow 0.5s linear;
+  text-indent: 1rem;
+  font-size: 15px;
+}
+.search button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: rgb(207, 128, 33);
+  box-shadow: 3px 3px 10px 0px rgb(221, 221, 221);
+  transition: box-shadow 0.5s linear;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search input:hover,
+.search button:hover {
+  box-shadow: 5px 5px 15px 0px rgb(195, 195, 195);
+  transition: box-shadow 0.5s linear;
+}/*# sourceMappingURL=search.css.map */

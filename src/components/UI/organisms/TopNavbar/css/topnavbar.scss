@@ -1,0 +1,74 @@
+@use "../../../../../css/base";
+
+.top--navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 2rem 6rem;
+
+  position: absolute;
+  z-index: 1;
+
+  &--logo {
+    display: flex;
+    gap: 0.5rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    img {
+      width: 2.5rem;
+    }
+  }
+
+  &--links {
+    display: flex;
+    gap: 10rem;
+
+    .text-red {
+      color: red;
+      font-weight: bold;
+      font-family: "Caveat";
+
+      position: relative;
+      top: -0.5rem;
+      left: -0.3rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-family: "Caveat";
+
+      i {
+        margin-right: 0.5rem;
+        margin-top: 0.2rem;
+      }
+      .fi-sr-heart {
+        color: red;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    & {
+      justify-content: center;
+    }
+
+    &--links {
+      display: none;
+    }
+  }
+}
+
+.veggie {
+  color: base.$primary-color;
+  font-family: "Caveat";
+}
+.table {
+  color: base.$secondary-color;
+  font-family: "Caveat";
+}

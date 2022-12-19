@@ -1,0 +1,39 @@
+@use "../../../../../css/base";
+
+.search {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+
+  input {
+    height: 3rem;
+    width: 20rem;
+    border: 0.5px solid base.$tertiary-color;
+    border-radius: 30px;
+
+    box-shadow: base.$shadow-light;
+    transition: base.$shadow-transition;
+
+    text-indent: 1rem;
+    font-size: 15px;
+  }
+
+  button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: base.$tertiary-color;
+
+    box-shadow: base.$shadow-light;
+    transition: base.$shadow-transition;
+
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  input:hover,
+  button:hover {
+    box-shadow: base.$shadow-dark;
+    transition: base.$shadow-transition;
+  }
+}

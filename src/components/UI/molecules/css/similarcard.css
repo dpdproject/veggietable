@@ -1,0 +1,40 @@
+.similarCard--image {
+  position: relative;
+}
+.similarCard--image--fav {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.749);
+  border-radius: 0.5rem 0rem 1rem 0rem;
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  margin: 0 auto;
+  box-shadow: 3px 3px 10px 0px rgb(221, 221, 221);
+}
+.similarCard--image--fav:hover {
+  box-shadow: 5px 5px 15px 0px rgb(195, 195, 195);
+}
+.similarCard--image--fav:active {
+  box-shadow: 3px 3px 10px 0px rgb(221, 221, 221);
+}
+.similarCard img {
+  width: 15rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 0px rgb(221, 221, 221);
+}
+.similarCard--info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.similarCard--info p {
+  font-size: 0.7rem;
+}
+.similarCard--info i {
+  display: flex;
+  align-items: center;
+}
+.similarCard--title h3 {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=similarcard.css.map */

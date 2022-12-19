@@ -1,0 +1,63 @@
+@use "../../../css/base";
+
+.recipes--container {
+  width: 80%;
+  position: relative;
+  top: 8rem;
+  margin: 0 auto;
+
+  &--title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h1 {
+      font-size: base.$h1--size;
+    }
+  }
+}
+
+.myrecipes {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 5rem;
+
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .myrecipes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .myrecipes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .myrecipes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.title {
+  position: relative;
+  top: 8rem;
+
+  margin: 0 auto;
+  width: 22rem;
+
+  font-size: base.$h1--size;
+}
+
+.message {
+  margin: 0 auto;
+  position: relative;
+
+  width: 22rem;
+  top: 20rem;
+}

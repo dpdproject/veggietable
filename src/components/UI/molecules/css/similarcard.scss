@@ -1,0 +1,57 @@
+@use "../../../../css/base";
+
+.similarCard {
+  &--image {
+    position: relative;
+
+    &--fav {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgba(255, 255, 255, 0.749);
+
+      border-radius: 0.5rem 0rem 1rem 0rem;
+
+      position: absolute;
+      left: 0rem;
+      top: 0rem;
+      margin: 0 auto;
+
+      box-shadow: base.$shadow-light;
+    }
+
+    &--fav:hover {
+      box-shadow: base.$shadow-dark;
+    }
+
+    &--fav:active {
+      box-shadow: base.$shadow-light;
+    }
+  }
+
+  img {
+    width: 15rem;
+    border-radius: 10px;
+    box-shadow: base.$shadow-light;
+  }
+
+  &--info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: base.$p--size;
+    }
+
+    i {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--title {
+    h3 {
+      font-size: base.$h3--size;
+    }
+  }
+}

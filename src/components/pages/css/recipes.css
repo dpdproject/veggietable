@@ -1,0 +1,82 @@
+.loading {
+  height: 80vh;
+}
+
+.recipes {
+  height: 770vh;
+}
+
+.recipes--container {
+  width: 80%;
+  position: relative;
+  top: 8rem;
+  margin: 0 auto;
+}
+.recipes--container--title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.recipes--container--title .search--form {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+.recipes--container--title h1 {
+  font-size: 3rem;
+}
+.recipes--container--title button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: rgb(207, 128, 33);
+  box-shadow: 3px 3px 10px 0px rgb(221, 221, 221);
+  transition: box-shadow 0.5s linear;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.recipes--container--title button i {
+  z-index: 1;
+}
+.recipes--container--title .button:hover {
+  box-shadow: 5px 5px 15px 0px rgb(195, 195, 195);
+  transition: box-shadow 0.5s linear;
+}
+.recipes--container .myrecipes {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.message {
+  margin: 0 auto;
+  position: relative;
+  top: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+  .recipes {
+    height: 350vh;
+  }
+  .recipes--container .myrecipes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 998px) {
+  .recipes {
+    height: 240vh;
+  }
+  .recipes--container .myrecipes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .recipes {
+    height: 170vh;
+  }
+  .recipes--container .myrecipes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=recipes.css.map */
