@@ -1,10 +1,13 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Await, useLoaderData, useParams } from "react-router-dom";
 import AnimatedPage from "../AnimatedPage";
 
 import Loading from "../UI/molecules/Loading";
-import SearchedRecipesLayout from "../UI/layout/SearchedRecipesLayout";
 import Error from "./Error";
+
+const SearchedRecipesLayout = lazy(() =>
+  import("../UI/layout/SearchedRecipesLayout")
+);
 
 const SearchedRecipes = () => {
   const searchData = useLoaderData();

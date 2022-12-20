@@ -1,0 +1,2 @@
+.search{display:flex;gap:1rem;margin-right:1rem}.search input{border:.5px solid #cf8021;border-radius:30px;font-size:15px;text-indent:1rem;width:20rem}.search button,.search input{box-shadow:3px 3px 10px 0 #ddd;height:3rem;transition:box-shadow .5s linear}.search button{background-color:#cf8021;border:none;border-radius:50%;cursor:pointer;width:3rem}.search button:hover,.search input:hover{box-shadow:5px 5px 15px 0 #c3c3c3;transition:box-shadow .5s linear}
+/*# sourceMappingURL=203.a7153393.chunk.css.map*/

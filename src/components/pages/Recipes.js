@@ -1,12 +1,13 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { useLoaderData, Await } from "react-router-dom";
 import "./css/recipes.css";
 
 import { fetchAPI } from "../../adapters/clientAPI";
 import Loading from "../UI/molecules/Loading";
-import RecipesLayout from "../UI/layout/RecipesLayout";
 import Error from "./Error";
 import AnimatedPage from "../AnimatedPage";
+
+const RecipesLayout = lazy(() => import("../UI/layout/RecipesLayout"));
 
 export function loader() {
   return fetchAPI();
