@@ -6,7 +6,6 @@ import RecipesForm from "../../UI/organisms/RecipesForm";
 
 const RecipesLayout = (props) => {
   const { data } = useAsyncValue();
-  console.log(data);
   const recipes = data.recipes;
 
   return (
